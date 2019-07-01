@@ -22,7 +22,7 @@ class GamesController < ApplicationController
   def index
     @games = Game.all
     @game = Game.find(params[:id])
-    render json: GameSerializer.serialize(game)
+    render json: GameSerializer.serialize(@game)
   end
 
   # def game_params
