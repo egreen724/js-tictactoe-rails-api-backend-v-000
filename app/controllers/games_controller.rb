@@ -21,7 +21,7 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
-
+    @game = Game.find(params[:id]) 
     render :root_path
   end
 
