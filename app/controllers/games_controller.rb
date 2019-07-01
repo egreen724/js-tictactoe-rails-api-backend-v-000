@@ -22,7 +22,7 @@ class GamesController < ApplicationController
   def index
     @games = Game.all
 
-    render 'home#index'
+    render :root_path
   end
 
   # def game_params
